@@ -1,0 +1,71 @@
+footer {
+	width: 100vw;
+	padding: 20px 0 20px;
+
+	position: absolut;
+	bottom: 0;
+
+	background-color: $bg-color-2;	
+	
+	span {
+		color: #555;
+		font-size: 14px;
+		line-height: 42px;
+		vertical-align: middle;
+
+		@include MQ(L) {
+			font-size: 12px;
+		}
+
+		@include MQ(M) {
+			font-size: 10px;
+		}
+	}
+
+	@include MQ(M) {
+		text-align: center;
+	}
+
+	@include MQ(S) {
+		text-align: center;
+	}
+}
+
+.social-bottom {
+	padding-left: 17%;
+
+	@include MQ(M) {
+		padding-left: 0;
+		text-align: center;
+	}
+
+	@include MQ(S) {
+		padding-left: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 1%;
+		padding: 1% 1.6%;		
+		border-radius: 50%;
+		background-color: $color-1;
+
+		color: $color-4;
+		font-size: 22px;
+		transition: 0.4s;
+
+		&:hover {
+			background-color: $color-3;
+			color: $color-1;
+			transition: 0.2s;
+		}
+
+		@include MQ(M) {
+			font-size: 18px;
+		}
+
+		@include MQ(S) {
+			padding: 1.5% 3.5%;
+		}
+	}
+}
